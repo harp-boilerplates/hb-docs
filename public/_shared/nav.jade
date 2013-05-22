@@ -1,12 +1,8 @@
 .navbar.navbar-fixed-top.navbar-main
   .navbar-inner
     .container-fluid
-      button.btn.btn-navbar(type="button", data-toggle="collapse", data-target=".nav-collapse")
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.brand(href="/") Harp Docs
-      .nav-collapse.collapse.pull-right
+      a.brand(href="/") #{ globals.name }
+      .pull-right
         ul.nav
           li(class="#{ current.source=='faq'?'active':'' }"): a(href="/faq") FAQ
           li(class="#{ current.source=='support'?'active':'' }"): a(href="/support") Support

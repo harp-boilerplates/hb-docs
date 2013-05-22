@@ -1,0 +1,10 @@
+ul.nav.nav-tabs.nav-stacked.index
+  li
+    form(method="get", action="/search")
+      input.search-query(type="text", name="q", placeholder="Search")
+  li(class="#{ current.path[0]=='getting-started'?'active':'' }")
+    a(href="/getting-started") Get started
+    ul.nav-child.nav.nav-tabs.nav-stacked(class="#{ current.path[0]=='getting-started'?'':'hide'}")
+      li(class="#{ current.path[1]=='page-1'?'active':''}"): a(href="/getting-started/page-1") Page 1
+      li(class="#{ current.path[1]=='page-2'?'active':''}"): a(href="/getting-started/page-2") Page 2
+  li(class="#{ current.path[0]=='support'?'active':'' }"): a(href="/support") Support

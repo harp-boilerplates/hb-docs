@@ -17,9 +17,12 @@
   border: none;
   .border-radius(1px);
 }
-
-.hero-unit h1 {
-  line-height: 1.5em;
+.hero-unit {
+  padding: 30px;
+  .border-radius(0);
+  h1 {
+    line-height: 1.5em;
+  }
 }
 
 a {
@@ -28,6 +31,7 @@ a {
 
 body {
   padding-top: 100px;
+  line-height: 1.8em;
 }
 
 .container-fluid {
@@ -57,21 +61,14 @@ body {
   }
 
   .brand,
-  .nav > li > a,
-  .nav-collapse .nav > li > a,
-  .nav-collapse .dropdown-menu a {
+  .nav > li > a {
     color: @white;
     text-shadow: none;
-    &:hover {
+    &:hover,
+    &:focus {
       color: @white;
+      background: darken(@siteColor, 10%);
     }
-  }
-
-  .nav-collapse .nav > li > a:hover,
-  .nav-collapse .nav > li > a:focus,
-  .nav-collapse .dropdown-menu a:hover,
-  .nav-collapse .dropdown-menu a:focus {
-    background: darken(@siteColor, 10%);
   }
 
   .nav {
@@ -80,6 +77,7 @@ body {
       > a:hover,
       > a:focus {
         background: darken(@siteColor, 10%);
+        color: #fff;
         .box-shadow(none);
       }
     }
