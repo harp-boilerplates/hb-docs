@@ -1,7 +1,7 @@
 !!!5
 html(lang="en")
   head
-    title #{ globals.name }
+    title #{ name }
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800')
     link(rel="stylesheet", href="/css/main.css")
     link(rel="stylesheet", href="/css/responsive.css")
@@ -20,7 +20,7 @@ html(lang="en")
     script(src="/_bootstrap/docs/assets/js/bootstrap.js")
     script
       (function() {
-        var cx = '#{ globals.custom_search_id }';
+        var cx = '#{ custom_search_id }';
         var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
         gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
             '//www.google.com/cse/cse.js?cx=' + cx;
