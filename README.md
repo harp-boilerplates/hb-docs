@@ -23,7 +23,7 @@ $ cd my-docs
 $ harp server
 ````
 
-Go to [http://localhost:8001](http://localhost:8001/) from your browser to see your website.
+Go to [http://localhost:9000](http://localhost:9000/) from your browser to see your website.
 
 
 ## Support
