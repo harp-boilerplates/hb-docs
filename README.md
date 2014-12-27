@@ -18,9 +18,9 @@ _This is a "documentation site" boilerplate to use with the Harp Platform and Ha
 2. Open your terminal and start a new project:
 
 ````
-$ git clone git@github.com:jorgepedret/hbp-docs.git my-docs
+$ git clone git@github.com:harp-boilerplates/hb-docs.git my-docs
 $ cd my-docs
-$ harp -s
+$ harp server
 ````
 
 Go to [http://localhost:8001](http://localhost:8001/) from your browser to see your website.
